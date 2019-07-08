@@ -54,14 +54,14 @@ client.on("message", async message => {
         .setColor(`#c542f5`)
         .setThumbnail(`${client.user.avatarURL}`)
         .addField(`**Meu Prefix!**`, `${block}ak!${block}`, true)
-        .addField(`**Quer ajuda?**`, `Apenas escreva ${block}ak!ajuda${block}`, true)
+        .addField(`**Quer ajuda?**`, `Apenas escreva ${block}ak!help${block}`, true)
         .addField(`**Adicione-me no seu servidor!**`, `Clique **[Aqui](https://discordapp.com/api/oauth2/authorize?client_id=597577497722486805&permissions=8&scope=bot)** para me adicionar no seu servidor!`)
+        .setFooter(`Akko Kagari`, `${client.user.avatarURL}`)
+        .setTimestamp();
         message.channel.send(embed).catch((err) => {
             message.channel.send(`Opa, algo deu errado :(`)
         })
     };
-    
-    
     let cmd = client.commands.get(command.slice(prefix.length));
     if(cmd) cmd.run(client, message, args, block, errorblock);
 
