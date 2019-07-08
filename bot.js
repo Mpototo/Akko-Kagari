@@ -53,7 +53,7 @@ client.on("message", async message => {
         .setDescription(`Pronto para melhorar seu server com **magia**?`)
         .setColor(`#c542f5`)
         .setThumbnail(`${client.user.avatarURL}`)
-        .addField(`**Meu Prefix!**`, `${block}ak!${block}`, true)
+        .addField(`**Meu Prefixo!**`, `${block}ak!${block}`, true)
         .addField(`**Quer ajuda?**`, `Apenas escreva ${block}ak!help${block}`, true)
         .addField(`**Adicione-me no seu servidor!**`, `Clique **[Aqui](https://discordapp.com/api/oauth2/authorize?client_id=597577497722486805&permissions=8&scope=bot)** para me adicionar no seu servidor!`)
         .setFooter(`Akko Kagari`, `${client.user.avatarURL}`)
