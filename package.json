@@ -20,6 +20,8 @@
   "homepage": "https://github.com/Mpototo/Akko-Kagari#readme",
   "dependencies": {
     "discord.js": "^11.5.1",
-    "nodemon": "^1.19.1"
+    "lowdb": "^1.0.0",
+    "nodemon": "^1.19.1",
+    "quickdb": "^1.0.5"
   }
 }

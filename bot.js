@@ -5,6 +5,9 @@ const client = new Discord.Client();
 
 const prefix = config.prefix;
 
+
+
+
 const fs = require("fs");
 client.commands = new Discord.Collection();
 
@@ -28,7 +31,7 @@ fs.readdir("./system/handler/commands/", (err, files) => {
 
 client.once("ready", () => {
     console.log(`${client.user.tag} Rodando!`);
-    client.user.setActivity(`ak!help`, { type:"LISTENING" });
+    client.user.setActivity(`ak!help`, { type:"Streaming", url:"https://www.twitch.tv/woodszin" });
 });
 
 client.on("message", async message => {
